@@ -1,1 +1,112 @@
-hello
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Go bằng Ví dụ</title>
+    <link rel=stylesheet href="/go-tutorial/site.css">
+  </head>
+  <body>
+    <div id="intro">
+      <h2><a href="./">Go bằng Ví dụ</a></h2>
+      <p>
+        <a href="https://go.dev">Go</a> là một ngôn ngữ lập trình mã nguồn mở được thiết kế tập trung vào việc xây dựng phần mềm có khả năng mở rộng, bảo mật và đáng tin cậy. Được phát triển bởi Google, Go (hay còn gọi là Golang) kết hợp sự đơn giản, hiệu quả và hiệu suất cao, giúp các lập trình viên dễ dàng tạo ra các ứng dụng mạnh mẽ, từ những dịch vụ web nhỏ đến các hệ thống phức tạp quy mô lớn. Go nổi bật với khả năng xử lý đa luồng một cách hiệu quả nhờ goroutines, cùng với hệ thống thu gom rác tự động và cú pháp rõ ràng dễ học. Để hiểu rõ hơn, bạn có thể tham khảo thêm tại <a href="https://go.dev/doc/tutorial/getting-started">tài liệu chính thức</a>.
+      </p>
+
+      <p>
+        <em>Go bằng Ví dụ</em> là một phương pháp học tập thực hành với Go qua các chương trình minh họa có ghi chú chi tiết. Bạn có thể bắt đầu với <a href="hello-world">ví dụ đầu tiên</a> hoặc tham khảo danh sách đầy đủ các ví dụ dưới đây để nắm bắt từng khía cạnh quan trọng của ngôn ngữ.
+      </p>
+
+      <p>
+        Trừ khi có ghi chú khác, các ví dụ tại đây đều dựa trên <a href="https://go.dev/doc/devel/release">phiên bản chính mới nhất của Go</a> và có thể sử dụng các tính năng ngôn ngữ mới nhất. Nếu bạn gặp trục trặc khi chạy code, hãy thử nâng cấp lên phiên bản Go mới nhất.
+      </p>
+
+      <ul>
+        <li><a href="hello-world">Hello World</a></li>
+        <li><a href="values">Giá trị</a></li>
+        <li><a href="variables">Biến</a></li>
+        <li><a href="constants">Hằng số</a></li>
+        <li><a href="for">Vòng lặp For</a></li>
+        <li><a href="if-else">Điều kiện If/Else</a></li>
+        <li><a href="switch">Lệnh Switch</a></li>
+        <li><a href="arrays">Mảng</a></li>
+        <li><a href="slices">Slices</a></li>
+        <li><a href="maps">Bản đồ (Maps)</a></li>
+        <li><a href="functions">Hàm</a></li>
+        <li><a href="multiple-return-values">Hàm trả về nhiều giá trị</a></li>
+        <li><a href="variadic-functions">Hàm nhiều đối số</a></li>
+        <li><a href="closures">Closures</a></li>
+        <li><a href="recursion">Đệ quy</a></li>
+        <li><a href="range-over-built-in-types">Vòng lặp range trên các kiểu dữ liệu tích hợp</a></li>
+        <li><a href="pointers">Con trỏ</a></li>
+        <li><a href="strings-and-runes">Chuỗi và Runes</a></li>
+        <li><a href="structs">Cấu trúc (Structs)</a></li>
+        <li><a href="methods">Phương thức</a></li>
+        <li><a href="interfaces">Giao diện (Interfaces)</a></li>
+        <li><a href="enums">Liệt kê (Enums)</a></li>
+        <li><a href="struct-embedding">Nhúng Struct</a></li>
+        <li><a href="generics">Generics</a></li>
+        <li><a href="range-over-iterators">Range trên các Iterator</a></li>
+        <li><a href="errors">Xử lý lỗi</a></li>
+        <li><a href="custom-errors">Lỗi tùy chỉnh</a></li>
+        <li><a href="goroutines">Goroutines</a></li>
+        <li><a href="channels">Kênh (Channels)</a></li>
+        <li><a href="channel-buffering">Đệm kênh (Channel Buffering)</a></li>
+        <li><a href="channel-synchronization">Đồng bộ hóa kênh</a></li>
+        <li><a href="channel-directions">Hướng đi của kênh</a></li>
+        <li><a href="select">Lệnh Select</a></li>
+        <li><a href="timeouts">Timeouts</a></li>
+        <li><a href="non-blocking-channel-operations">Các thao tác kênh không chặn</a></li>
+        <li><a href="closing-channels">Đóng kênh</a></li>
+        <li><a href="range-over-channels">Vòng lặp range trên kênh</a></li>
+        <li><a href="timers">Bộ đếm thời gian (Timers)</a></li>
+        <li><a href="tickers">Tickers</a></li>
+        <li><a href="worker-pools">Worker Pools</a></li>
+        <li><a href="waitgroups">WaitGroups</a></li>
+        <li><a href="rate-limiting">Giới hạn tốc độ (Rate Limiting)</a></li>
+        <li><a href="atomic-counters">Bộ đếm nguyên tử (Atomic Counters)</a></li>
+        <li><a href="mutexes">Mutexes</a></li>
+        <li><a href="stateful-goroutines">Goroutines có trạng thái</a></li>
+        <li><a href="sorting">Sắp xếp</a></li>
+        <li><a href="sorting-by-functions">Sắp xếp theo hàm</a></li>
+        <li><a href="panic">Panic</a></li>
+        <li><a href="defer">Defer</a></li>
+        <li><a href="recover">Recover</a></li>
+        <li><a href="string-functions">Hàm chuỗi</a></li>
+        <li><a href="string-formatting">Định dạng chuỗi</a></li>
+        <li><a href="text-templates">Mẫu văn bản</a></li>
+        <li><a href="regular-expressions">Biểu thức chính quy</a></li>
+        <li><a href="json">JSON</a></li>
+        <li><a href="xml">XML</a></li>
+        <li><a href="time">Thời gian</a></li>
+        <li><a href="epoch">Epoch</a></li>
+        <li><a href="time-formatting-parsing">Định dạng / Phân tích thời gian</a></li>
+        <li><a href="random-numbers">Số ngẫu nhiên</a></li>
+        <li><a href="number-parsing">Phân tích số</a></li>
+        <li><a href="url-parsing">Phân tích URL</a></li>
+        <li><a href="sha256-hashes">Băm SHA256</a></li>
+        <li><a href="base64-encoding">Mã hóa Base64</a></li>
+        <li><a href="reading-files">Đọc tập tin</a></li>
+        <li><a href="writing-files">Ghi tập tin</a></li>
+        <li><a href="line-filters">Bộ lọc dòng</a></li>
+        <li><a href="file-paths">Đường dẫn tập tin</a></li>
+        <li><a href="directories">Thư mục</a></li>
+        <li><a href="temporary-files-and-directories">Tập tin và thư mục tạm thời</a></li>
+        <li><a href="embed-directive">Chỉ dẫn Embed</a></li>
+        <li><a href="testing-and-benchmarking">Kiểm thử và đánh giá hiệu năng</a></li>
+        <li><a href="command-line-arguments">Tham số dòng lệnh</a></li>
+        <li><a href="command-line-flags">Cờ dòng lệnh</a></li>
+        <li><a href="command-line-subcommands">Lệnh con dòng lệnh</a></li>
+        <li><a href="environment-variables">Biến môi trường</a></li>
+        <li><a href="logging">Ghi log</a></li>
+        <li><a href="http-client">HTTP Client</a></li>
+        <li><a href="http-server">HTTP Server</a></li>
+        <li><a href="context">Context</a></li>
+        <li><a href="spawning-processes">Khởi tạo tiến trình</a></li>
+        <li><a href="execing-processes">Thực thi tiến trình</a></li>
+        <li><a href="signals">Tín hiệu</a></li>
+        <li><a href="exit">Thoát</a></li>
+      </ul>
+
+    </div>
+  </body>
+</html>
